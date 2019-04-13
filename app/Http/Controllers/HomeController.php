@@ -31,7 +31,7 @@ class HomeController extends Controller
     public function profile()
     {
         $user = $user = Auth::user();
-        dd($user->email);
+        dd($user);
         return view('profile', ['myvariable' => 'Hello World']);
     }
 }
